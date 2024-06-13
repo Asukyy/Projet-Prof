@@ -17,10 +17,10 @@ const Login = () => {
                 if (user[userMatching].password === password) {
                     console.log("ok");
                     navigate(`/dashboard/${user[userMatching].username}`);
-                    return; // Sortir de la fonction après la navigation
+                    return;
                 } else {
                     setError('Mot de passe incorrect');
-                    return; // Sortir de la fonction en cas d'erreur
+                    return;
                 }
             }
         }
