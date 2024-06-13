@@ -1,0 +1,106 @@
+.cours-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .cours-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .cours-container button {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cours-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .daypilot-scheduler-rowheader-inner {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .daypilot-scheduler-rowheader {
+    min-width: 120px !important;
+  }
+
+  .daypilot-scheduler-cell-group {
+    border-right: 1px solid #ddd;
+  }
+
+  .daypilot-scheduler-rowheader .scheduler-default-cell {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+    padding-right: 5px;
+  }
+
+  .daypilot-scheduler-rowheader .scheduler-default-cell:first-child {
+    text-align: left;
+  }
+
+  .daypilot-scheduler-rowheader .scheduler-default-cell.scheduler-header-group {
+    text-align: center;
+  }
+
+  .daypilot-scheduler-rowheader .scheduler-default-cell.scheduler-header-group .scheduler-header-group-content {
+    font-weight: bold;
+  }
+
+  .daypilot-scheduler-timeheader-group {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .daypilot-scheduler-timeheader-cell {
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+  }
+
+  .daypilot-scheduler-timeheader-cell:first-child {
+    border-left: 1px solid #ddd;
+  }
+
+  .daypilot-scheduler-timeheader-cell .timeheader-group {
+    font-weight: bold;
+  }
+
+  .daypilot-scheduler-rowheader-cell.scheduler-cell-group-last,
+  .daypilot-scheduler-timeheader-cell.timeheader-group-last {
+    border-right: none !important;
+  }
+
+  .daypilot-scheduler-event {
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .daypilot-scheduler-event:hover {
+    background-color: #0056b3;
+  }
+
+  .daypilot-scheduler-nonbusiness {
+    background-color: #f8f9fa;
+  }
+
+  @media (max-width: 768px) {
+    .cours-container {
+      padding: 15px;
+    }
+
+    .daypilot-scheduler-rowheader {
+      min-width: auto !important;
+    }
+  }
