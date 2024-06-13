@@ -2,11 +2,16 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import users from '../data/user';
 import notes from '../data/notes';
+import cours from '../data/cours';
+import { useNavigate } from 'react-router-dom';
+
 
 const Dashboard = () => {
   const { username } = useParams();
   const currentUser = users.find(user => user.username === username);
   const noteEleve = notes.find(notes => notes.username === username);
+  const navigate = useNavigate();
+
 
   if (!currentUser) {
     return <p>User not found</p>;
@@ -29,7 +34,11 @@ const Dashboard = () => {
 const renderStudentView = (currentUser, noteEleve) => (
   <div>
     <p>Bienvenue, {currentUser.name}!</p>
+    {currentUser.absence}
+    <h2>Votre Planning</h2>
+    <h2>Vos Absences</h2>
     <h2>Vos Notes</h2>
+
     {noteEleve ? (
       <div>
         <p>Math: {noteEleve.notes.math}</p>
